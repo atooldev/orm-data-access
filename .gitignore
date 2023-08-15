@@ -22,7 +22,7 @@ coverage/
 
 # Dependency lock files
 yarn.lock
-package-lock.json
+package-lock.jsonP
 
 # Environment variables
 .env
