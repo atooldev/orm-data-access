@@ -1,6 +1,6 @@
 {
   "name": "@atooldev/orm-data-access",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Utility package for ORM data access operations",
   "main": "dist/index.js",
   "private": false,
