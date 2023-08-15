@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Utility package for ORM data access operations",
   "main": "dist/index.js",
+  "private": false,
   "repository": "https://github.com/atooldev/orm-data-access",
   "scripts": {
     "build": "tsc",
