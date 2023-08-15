@@ -55,3 +55,24 @@ const recordId = '123';
 const record = await dataAccess.getDataById('User', recordId);
 console.log(`Record with ID ${recordId}:`, record);
 ```
+
+## Contribute
+
+Contributions to this middleware are welcome! If you encounter any issues, have suggestions, or want to improve the codebase, feel free to open an issue or submit a pull request.
+
+To contribute to this project, follow these steps:
+
+1. Fork the repository.
+2. Clone your forked repository to your local machine.
+3. Create a new branch for your feature or bug fix: `git checkout -b feature/your-feature-name`.
+4. Make your changes and test thoroughly.
+5. Commit your changes: `git commit -m "Add your commit message here"`.
+6. Push to the branch: `git push origin feature/your-feature-name`.
+7. Create a pull request in this repository.
+
+Thank you for contributing to making this middleware better!
+
+
+## License
+
+This project is licensed under the terms of the [MIT License](LICENSE).
