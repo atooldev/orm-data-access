@@ -1,12 +1,12 @@
-import { DataSource, DataSourceOptions, EntityMetadata, ObjectType, Repository } from 'typeorm';
+import { DataSource, DataSourceOptions, EntityMetadata, EntitySchema, ObjectType, Repository } from 'typeorm';
 
 
 class TypeORMDataAccess {
     private config: DataSourceOptions;
-    private entities: ObjectType<any>[]; // Replace 'any' with the appropriate entity type
-    private connection: any; // Replace 'any' with the appropriate connection type
+    private entities: ObjectType<EntitySchema>[]; // Replace 'any' with the appropriate entity type
+    private connection: DataSource;
 
-    constructor(config: DataSourceOptions, entities: ObjectType<any>[]) {
+    constructor(config: DataSourceOptions, entities: ObjectType<EntitySchema>[]) {
         this.config = config;
         this.entities = entities;
     }
@@ -37,7 +37,7 @@ class TypeORMDataAccess {
     }> {
         const repository = this.getRepository(model);
 
-        
+
 
         const { page = 1, perPage = 10, filter = {} } = options;
 
