@@ -8,7 +8,8 @@
   "scripts": {
     "build": "tsc",
     "preversion": "npm run lint && npm run format && npm run build",
-    "prepublishOnly": "npm-auto-version && npm run build",
+    "auto-version": "npm-auto-version",
+    "prepublishOnly": "npm run auto-version && npm run build",
     "postpublish": "git push origin --tags",
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint --fix src/**/*.ts",
